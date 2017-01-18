@@ -1,6 +1,8 @@
 /* styling */
-h1 {
-  color: #F00;
+
+#logo {
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 nav {
@@ -13,4 +15,18 @@ li {
   display: inline-block;
   padding: 0 15px;
   color: #6DA3E1;
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  clear: both;
+  display: inline-block;
+  z-index: 10000;
+  margin: 0;
+  background-color: #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
