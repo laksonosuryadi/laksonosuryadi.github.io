@@ -25,5 +25,5 @@ be useful as a foundation for the upcoming immersive on-site coding class, later
 :three:  This year will be the turning point of my life. As I escaped from my ~~non~~ comfort zone, and live my life to the fullest! :rocket:
 
 
-**Future Plans:**
+**Future Plans:**  
 * To apply all of the knowledges I gained from Hacktiv8 Coding Bootcamp into my Website.
