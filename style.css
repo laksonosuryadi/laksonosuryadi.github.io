@@ -25,24 +25,98 @@ header {
 
 section {
   width: 100%;
-  margin-top: 150px;
   text-align: center;
 }
 
 h1 {
+   -moz-animation-duration: 2s;
+   -webkit-animation-duration: 2s;
+   -moz-animation-name: slidein;
+   -webkit-animation-name: slidein;
+   font-size: 30pt;
+   color: white;
+   text-align: left;
+   margin-top: 390px;
+   padding-left: 30px;
+   line-height: 45px;
+   letter-spacing: 1px;
+}
+
+@-moz-keyframes slidein {
+   from {
+      margin-left:100%;
+      width:300%
+   }
+   to {
+      margin-left:0;
+      width:100%;
+   }
+}
+@-webkit-keyframes slidein {
+   from {
+      margin-left:100%;
+      width:300%
+   }
+   to {
+      margin-left:0%;
+      width:100%;
+   }
+}
+
+h2 {
   margin-top: 80px;
   margin-bottom: 20px;
   font-size: 35pt;
   color: rgb(52,73,94);
 }
 
-h2 {
+h3 {
   font-size: 15px;
   margin-bottom: 33px;
   color: rgb(52,73,94);
 }
 
+h4 {
+   -moz-animation-duration: 2s;
+   -webkit-animation-duration: 2s;
+   -moz-animation-name: slidein;
+   -webkit-animation-name: slidein;
+   font-size: 15pt;
+   color: white;
+   text-align: left;
+   margin-top: 5px;
+   padding-left: 30px;
+   line-height: 40px;
+   word-spacing: 2px;
+}
+
+@-moz-keyframes slidein {
+   from {
+      margin-left:100%;
+      width:300%
+   }
+   to {
+      margin-left:0;
+      width:100%;
+   }
+}
+@-webkit-keyframes slidein {
+   from {
+      margin-left:100%;
+      width:300%
+   }
+   to {
+      margin-left:0%;
+      width:100%;
+   }
+}
+
 a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
   text-decoration: none;
   color: black;
 }
@@ -86,17 +160,38 @@ li {
   border-color: rgb(255,78,68);
 }
 
+.HERO {
+  background: url("hero.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: 590px;
+  margin-top: 45px;
+}
+
+.overlayHERO{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2); /*dim the background*/
+}
+
 .weeks{
-  background-color: #FFF;
   width: 100%;
   display: inline-block;
   padding: 0;
-  font-size: 40px;
+  font-size: 30pt;
 }
 
 .week1 {
   float: left;
   background-color: red;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   width: 16.66%;
   height: 350px;
   display: flex;
@@ -113,7 +208,7 @@ li {
 
 .week1:hover:after{
   content: attr(data-hover);
-  font-size: 30px;
+  font-size: 25pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -122,6 +217,8 @@ li {
 .week2 {
   float:left;
   background-color: orange;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   width: 16.66%;
   height: 350px;
   display: flex;
@@ -138,7 +235,7 @@ li {
 
 .week2:hover:after{
   content: attr(data-hover);
-  font-size: 30px;
+  font-size: 25pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -146,24 +243,26 @@ li {
 
 .week3 {
   float: left;
-  background-color: yellow;
+  background-color: gold;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   width: 16.66%;
   height: 350px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid yellow;
+  border: 1px solid gold;
 }
 
 .week3:hover{
-  background-color: yellow;
+  background-color: gold;
   font-size: 0;
 }
 
 .week3:hover:after{
   content: attr(data-hover);
-  font-size: 30px;
+  font-size: 25pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -172,6 +271,8 @@ li {
 .week4 {
   float: left;
   background-color: green;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   width: 16.66%;
   height: 350px;
   display: flex;
@@ -188,7 +289,7 @@ li {
 
 .week4:hover:after{
   content: attr(data-hover);
-  font-size: 30px;
+  font-size: 25pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -196,24 +297,26 @@ li {
 
 .week5 {
   float: left;
-  background-color: cyan;
+  background-color: DodgerBlue;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   width: 16.66%;
   height: 350px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid cyan;
+  border: 1px solid DodgerBlue;
 }
 
 .week5:hover{
-  background-color: cyan;
+  background-color: DodgerBlue;
   font-size: 0;
 }
 
 .week5:hover:after{
   content: attr(data-hover);
-  font-size: 30px;
+  font-size: 25pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -222,6 +325,8 @@ li {
 .week6 {
   float: left;
   background-color: magenta;
+  color: white;
+  text-shadow: 2px 2px 5px black;
   width: 16.66%;
   height: 350px;
   display: flex;
@@ -238,7 +343,7 @@ li {
 
 .week6:hover:after{
   content: attr(data-hover);
-  font-size: 30px;
+  font-size: 25pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
