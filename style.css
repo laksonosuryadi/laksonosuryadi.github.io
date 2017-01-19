@@ -7,20 +7,18 @@
 body {
   width: 100%;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 header {
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  padding: 10px 60px;
+  padding: 10px 20px 5px 20px;
   clear: both;
   display: inline-block;
-  z-index: 10000;
-  align-items: center;
   background-color: #FFF;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -29,91 +27,137 @@ section {
 }
 
 h1 {
-   -moz-animation-duration: 2s;
-   -webkit-animation-duration: 2s;
-   -moz-animation-name: slidein;
-   -webkit-animation-name: slidein;
-   font-size: 30pt;
-   color: white;
-   text-align: left;
-   margin-top: 390px;
-   padding-left: 30px;
-   line-height: 45px;
-   letter-spacing: 1px;
+    position: absolute;
+    left: -600px;
+    width: 100%;
+    -o-animation-name: slide;
+    -o-animation: slide 2s forwards;
+    -o-animation-delay: 0s;
+    -ms-animation-name: slide;
+    -ms-animation: slide 2s forwards;
+    -ms-animation-delay: 0s;
+    -moz-animation-name: slide;
+    -moz-animation: slide 2s forwards;
+    -moz-animation-delay: 0s;
+    -webkit-animation-name: slide;
+    -webkit-animation: slide 2s forwards;
+    -webkit-animation-delay: 0s;
+    animation-name: slide;
+    animation: slide 2s forwards;
+    animation-delay: 0s;
+    font-size: 25pt;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    margin-top: 360px;
+    padding-left: 30px;
+    line-height: 45px;
+    letter-spacing: 1px;
 }
 
-@-moz-keyframes slidein {
-   from {
-      margin-left:100%;
-      width:300%
-   }
-   to {
-      margin-left:0;
-      width:100%;
-   }
+@-o-keyframes slide {
+    100% { left: 0; }
 }
-@-webkit-keyframes slidein {
-   from {
-      margin-left:100%;
-      width:300%
-   }
-   to {
-      margin-left:0%;
-      width:100%;
-   }
+
+@-ms-keyframes slide {
+    100% { left: 0; }
+}
+
+@-moz-keyframes slide {
+    100% { left: 0; }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
 }
 
 h2 {
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 35pt;
+  font-weight: 300;
   color: rgb(52,73,94);
 }
 
 h3 {
   font-size: 15px;
+  font-weight: 300;
   margin-bottom: 33px;
   color: rgb(52,73,94);
+  line-height: 20px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 h4 {
-   -moz-animation-duration: 2s;
-   -webkit-animation-duration: 2s;
-   -moz-animation-name: slidein;
-   -webkit-animation-name: slidein;
-   font-size: 15pt;
-   color: white;
-   text-align: left;
-   margin-top: 5px;
-   padding-left: 30px;
-   line-height: 40px;
-   word-spacing: 2px;
+    position: absolute;
+    left: -600px;
+    width: 100%;
+    -o-animation-name: slide;
+    -o-animation: slide 2s forwards;
+    -o-animation-delay: 0s;
+    -ms-animation-name: slide;
+    -ms-animation: slide 2s forwards;
+    -ms-animation-delay: 0s;
+    -moz-animation-name: slide;
+    -moz-animation: slide 2s forwards;
+    -moz-animation-delay: 0s;
+    -webkit-animation-name: slide;
+    -webkit-animation: slide 2s forwards;
+    -webkit-animation-delay: 0s;
+    animation-name: slide;
+    animation: slide 2s forwards;
+    animation-delay: 0s;
+    font-size: 20pt;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    margin-top: 490px;
+    padding-left: 30px;
+    line-height: 50px;
+    letter-spacing: 1px;
 }
 
-@-moz-keyframes slidein {
-   from {
-      margin-left:100%;
-      width:300%
-   }
-   to {
-      margin-left:0;
-      width:100%;
-   }
-}
-@-webkit-keyframes slidein {
-   from {
-      margin-left:100%;
-      width:300%
-   }
-   to {
-      margin-left:0%;
-      width:100%;
-   }
+@-o-keyframes slide {
+    100% { left: 0; }
 }
 
-a:link {
+@-ms-keyframes slide {
+    100% { left: 0; }
+}
+
+@-moz-keyframes slide {
+    100% { left: 0; }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+h5 {
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+h6 {
+  font-size: 13pt;
+  font-weight: 900;
+}
+
+header a:link {
   text-decoration: none;
   color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:visited {
@@ -122,33 +166,42 @@ a:visited {
 }
 
 nav {
-  margin: 0 auto;
+  margin-bottom: 5px;
   float: right;
-  margin-top: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-li {
+header li {
   display: inline-block;
   padding: 10px 0;
-  margin: 0 15px;
+  margin-left: 20px;
   color: rgb(255,78,68);
 }
 
+li {
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 25px;
+  word-spacing: 1px;
+}
+
 #logo {
-  margin-top: 5px;
   border-radius: 100%;
 }
 
-.underlined:hover{
+.underlined:hover {
   border-bottom: 2px solid rgb(255,78,68);
 }
 
 .contact {
   border: 1px solid rgb(255,78,68);
   padding: 10px;
-  margin-left: 15px;
+  margin-left: 20px;
   border-width: 2px;
   border-top-right-radius: 8px;
   border-radius: 8px
@@ -167,11 +220,10 @@ li {
   background-repeat: no-repeat;
   background-position: top right;
   width: 100%;
-  height: 590px;
-  margin-top: 45px;
+  height: 580px;
 }
 
-.overlayHERO{
+.overlayHERO {
   position: absolute;
   top: 0;
   left: 0;
@@ -180,7 +232,7 @@ li {
   background-color: rgba(0,0,0,0.2); /*dim the background*/
 }
 
-.weeks{
+.weeks {
   width: 100%;
   display: inline-block;
   padding: 0;
@@ -189,7 +241,7 @@ li {
 
 .week1 {
   float: left;
-  background-color: red;
+  background-color: #68CEFE;
   color: white;
   text-shadow: 2px 2px 5px black;
   width: 16.66%;
@@ -198,17 +250,18 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid #68CEFE;
+  border-top-left-radius: 50px;
 }
 
-.week1:hover{
-  background-color: red;
+.week1:hover {
+  background-color: #68CEFE;
   font-size: 0;
 }
 
-.week1:hover:after{
+.week1:hover:after {
   content: attr(data-hover);
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -216,7 +269,7 @@ li {
 
 .week2 {
   float:left;
-  background-color: orange;
+  background-color: #3ABAFB;
   color: white;
   text-shadow: 2px 2px 5px black;
   width: 16.66%;
@@ -225,17 +278,17 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid orange;
+  border: 1px solid #3ABAFB;
 }
 
-.week2:hover{
-  background-color: orange;
+.week2:hover {
+  background-color: #3ABAFB;
   font-size: 0;
 }
 
-.week2:hover:after{
+.week2:hover:after {
   content: attr(data-hover);
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -243,7 +296,7 @@ li {
 
 .week3 {
   float: left;
-  background-color: gold;
+  background-color: #2098D7;
   color: white;
   text-shadow: 2px 2px 5px black;
   width: 16.66%;
@@ -252,17 +305,17 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid gold;
+  border: 1px solid #2098D7;
 }
 
-.week3:hover{
-  background-color: gold;
+.week3:hover {
+  background-color: #2098D7;
   font-size: 0;
 }
 
-.week3:hover:after{
+.week3:hover:after {
   content: attr(data-hover);
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -270,7 +323,7 @@ li {
 
 .week4 {
   float: left;
-  background-color: green;
+  background-color: #0E86C3;
   color: white;
   text-shadow: 2px 2px 5px black;
   width: 16.66%;
@@ -279,17 +332,17 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid green;
+  border: 1px solid #0E86C3;
 }
 
-.week4:hover{
-  background-color: green;
+.week4:hover {
+  background-color: #0E86C3;
   font-size: 0;
 }
 
-.week4:hover:after{
+.week4:hover:after {
   content: attr(data-hover);
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -297,7 +350,7 @@ li {
 
 .week5 {
   float: left;
-  background-color: DodgerBlue;
+  background-color: #006EA9;
   color: white;
   text-shadow: 2px 2px 5px black;
   width: 16.66%;
@@ -306,17 +359,17 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid DodgerBlue;
+  border: 1px solid #006EA9;
 }
 
-.week5:hover{
-  background-color: DodgerBlue;
+.week5:hover {
+  background-color: #006EA9;
   font-size: 0;
 }
 
-.week5:hover:after{
+.week5:hover:after {
   content: attr(data-hover);
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -324,7 +377,7 @@ li {
 
 .week6 {
   float: left;
-  background-color: magenta;
+  background-color: #006092;
   color: white;
   text-shadow: 2px 2px 5px black;
   width: 16.66%;
@@ -333,18 +386,83 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  border: 1px solid magenta;
+  border: 1px solid #006092;
+  border-bottom-right-radius: 50px;
 }
 
-.week6:hover{
-  background-color: magenta;
+.week6:hover {
+  background-color: #006092;
   font-size: 0;
 }
 
-.week6:hover:after{
+.week6:hover:after {
   content: attr(data-hover);
-  font-size: 25pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   padding: 20px;
+}
+
+#contentOfTheWeek {
+  background-color: #FFF;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+article {
+  text-align: left;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.containerWeek1 {
+  background-color: #68CEFE;
+  width: 100%;
+  padding: 70px;
+}
+
+.containerPhase0 {
+  width: 100%;
+  padding: 35px;
+}
+
+.containerAbout {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+#contentAbout {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+#contentAbout img {
+  border: 1px solid rgb(255,78,68);
+  padding: 10px;
+  border-radius: 100%;
+  border-width: 5px;
+  border-style: dashed;
+}
+
+#contentAbout h2 {
+  text-align: center;
+}
+
+.containerAbout p {
+   color: white;
+}
+
+.containerAbout p:hover {
+   color: red;
+}
+
+footer {
+  font-size: 10pt;
+  text-align: center;
+  background-color: #000;
+  padding: 30px;
+  color: #FFF;
 }
