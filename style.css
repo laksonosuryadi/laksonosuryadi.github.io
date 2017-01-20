@@ -473,3 +473,399 @@ footer {
   padding: 30px;
   color: #FFF;
 }
+
+/****************************MEDIA QUERY****************************/
+
+@media only screen and (max-width: 640px) {
+  header li {
+    display: inline-block;
+    padding: 5px 0;
+    margin-left: 7px;
+    color: rgb(255,78,68);
+  }
+
+  .contact {
+    border: 0;
+    padding: 5px 0;
+    margin-left: 7px;
+  }
+
+  #logo {
+    width: 50px;
+    margin-top: 1px;
+    border-radius: 100%;
+  }
+
+  .HERO {
+    background: url("hero.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    height: 300px;
+  }
+
+  h1 {
+      position: absolute;
+      left: -600px;
+      width: 100%;
+      -o-animation-name: slide;
+      -o-animation: slide 2s forwards;
+      -o-animation-delay: 0s;
+      -ms-animation-name: slide;
+      -ms-animation: slide 2s forwards;
+      -ms-animation-delay: 0s;
+      -moz-animation-name: slide;
+      -moz-animation: slide 2s forwards;
+      -moz-animation-delay: 0s;
+      -webkit-animation-name: slide;
+      -webkit-animation: slide 2s forwards;
+      -webkit-animation-delay: 0s;
+      animation-name: slide;
+      animation: slide 2s forwards;
+      animation-delay: 0s;
+      font-size: 15pt;
+      font-weight: 300;
+      color: white;
+      text-align: left;
+      margin-top: 190px;
+      padding-left: 20px;
+      line-height: 24px;
+      letter-spacing: 1px;
+  }
+
+  @-o-keyframes slide {
+      100% { left: 0; }
+  }
+
+  @-ms-keyframes slide {
+      100% { left: 0; }
+  }
+
+  @-moz-keyframes slide {
+      100% { left: 0; }
+  }
+
+  @-webkit-keyframes slide {
+      100% { left: 0; }
+  }
+
+  @keyframes slide {
+      100% { left: 0; }
+  }
+
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 22px;
+    font-size: 25pt;
+    font-weight: 300;
+    color: rgb(52,73,94);
+  }
+
+  h3 {
+    font-size: 10pt;
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: rgb(52,73,94);
+    line-height: 24px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  h4 {
+      position: absolute;
+      left: -600px;
+      width: 100%;
+      -o-animation-name: slide;
+      -o-animation: slide 2s forwards;
+      -o-animation-delay: 0s;
+      -ms-animation-name: slide;
+      -ms-animation: slide 2s forwards;
+      -ms-animation-delay: 0s;
+      -moz-animation-name: slide;
+      -moz-animation: slide 2s forwards;
+      -moz-animation-delay: 0s;
+      -webkit-animation-name: slide;
+      -webkit-animation: slide 2s forwards;
+      -webkit-animation-delay: 0s;
+      animation-name: slide;
+      animation: slide 2s forwards;
+      animation-delay: 0s;
+      font-size: 11pt;
+      font-weight: 300;
+      color: white;
+      text-align: left;
+      margin-top: 250px;
+      padding-left: 20px;
+      line-height: 50px;
+      letter-spacing: 1px;
+  }
+
+  h5 {
+    font-size: 20pt;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .containerPhase0 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .containerExplainPhase0 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .weeks {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20pt;
+  }
+
+  .week1 {
+    float: left;
+    background-color: #68CEFE;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #68CEFE;
+    border-top-left-radius: 25px;
+  }
+
+  .week1:hover {
+    background-color: #68CEFE;
+    font-size: 0;
+  }
+
+  .week1:hover:after {
+    content: attr(data-hover);
+    font-size: 10pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .week2 {
+    float:left;
+    background-color: #3ABAFB;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3ABAFB;
+  }
+
+  .week2:hover {
+    background-color: #3ABAFB;
+    font-size: 0;
+  }
+
+  .week2:hover:after {
+    content: attr(data-hover);
+    font-size: 10pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .week3 {
+    float: left;
+    background-color: #2098D7;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2098D7;
+  }
+
+  .week3:hover {
+    background-color: #2098D7;
+    font-size: 0;
+  }
+
+  .week3:hover:after {
+    content: attr(data-hover);
+    font-size: 10pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .week4 {
+    float: left;
+    background-color: #0E86C3;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0E86C3;
+  }
+
+  .week4:hover {
+    background-color: #0E86C3;
+    font-size: 0;
+  }
+
+  .week4:hover:after {
+    content: attr(data-hover);
+    font-size: 10pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .week5 {
+    float: left;
+    background-color: #006EA9;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #006EA9;
+  }
+
+  .week5:hover {
+    background-color: #006EA9;
+    font-size: 0;
+  }
+
+  .week5:hover:after {
+    content: attr(data-hover);
+    font-size: 10pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .week6 {
+    float: left;
+    background-color: #006092;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #006092;
+    border-bottom-right-radius: 25px;
+  }
+
+  .week6:hover {
+    background-color: #006092;
+    font-size: 0;
+  }
+
+  .week6:hover:after {
+    content: attr(data-hover);
+    font-size: 8pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  #contentOfTheWeek {
+    background-color: #FFF;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  article {
+    text-align: left;
+    padding: 25px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .containerWeek1 {
+    background-color: #68CEFE;
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  #contentAbout {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+/************************ANOTHER MEDIA QUERY************************/
+
+@media only screen and (max-width: 320px) {
+  .HERO {
+    background: url("hero.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 300px;
+  }
+
+  header li {
+    display: inline-block;
+    padding: 5px 0;
+    margin-left: 7px;
+    color: rgb(255,78,68);
+    font-size: 9pt;
+  }
+
+  .contact {
+    border: 0;
+    padding: 5px 0;
+    margin-left: 7px;
+  }
+
+  #logo {
+    width: 40px;
+    margin-top: 1px;
+    border-radius: 100%;
+  }
+
+  h5 {
+    font-size: 20pt;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  #contentAbout {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .week6:hover:after {
+    content: attr(data-hover);
+    font-size: 7pt;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
