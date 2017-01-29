@@ -814,6 +814,10 @@ footer {
     margin: 0 auto;
     padding: 20px;
   }
+
+  #phase0 {
+    display: none;
+  }
 }
 
 /************************ANOTHER MEDIA QUERY************************/
@@ -867,5 +871,9 @@ footer {
     text-align: center;
     justify-content: center;
     padding: 20px;
+  }
+
+  #phase0 {
+    display: none;
   }
 }
