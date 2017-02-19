@@ -818,6 +818,10 @@ footer {
   #fase0 {
     display: none; /* REMOVING LINK TO PHASE0 ON MOBILE DEVICE */
   }
+
+  #about {
+    display: none;
+  }
 }
 
 /************************ANOTHER MEDIA QUERY************************/
@@ -873,7 +877,11 @@ footer {
     padding: 20px;
   }
 
-  #phase0 {
+  #fase0 {
+    display: none;
+  }
+
+  #about {
     display: none;
   }
 }
